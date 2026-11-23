@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1>Dados dos cursos</h1>
+
+        <form action="main.php" method="post">
+            <h2>Primeiro curso</h2>
+            <label for="nome1">Nome do curso:</label>
+            <input type="text" name="nome1" id="nome1" required />
+            <label for="duracao1">Duração em semestres:</label>
+            <input type="number" name="duracao1" id="duracao1" min="1" step="1" required />
+
+            <h2>Segundo curso</h2>
+            <label for="nome2">Nome do curso:</label>
+            <input type="text" name="nome2" id="nome2" required />
+            <label for="duracao2">Duração em semestres:</label>
+            <input type="number" name="duracao2" id="duracao2" min="1" step="1" required />
+
+            <button type="submit">Exibir cursos</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </main>
+</body>
+
+</html>
